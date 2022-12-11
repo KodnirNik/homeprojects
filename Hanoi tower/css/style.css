@@ -1,0 +1,72 @@
+:root {
+    --disk-height: 20px;
+}
+body{
+    display: flex;
+}
+button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    position: relative;
+    border: 1px solid red;
+    width: 800px;
+}
+
+.tower {
+    width: 250px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+.tower-img {
+    background-color: darkblue;
+    height: 500px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+}
+
+.tower-bottom {
+    background-color: darkblue;
+    height: var(--disk-height);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 80px;
+}
+
+.disk {
+    height: var(--disk-height);
+    position: absolute;
+}
+
+.red {
+    width: 80px;
+    background-color: #a01313;
+    bottom: 50px;
+    left: calc(10px + 125px - 40px);
+}
+
+.purple {
+    width: 100px;
+    background-color: rebeccapurple;
+    bottom: 30px;
+    left: calc(125px + 10px - 50px);
+}
